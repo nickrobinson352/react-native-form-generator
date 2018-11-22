@@ -9,7 +9,7 @@ import {TimePickerComponent} from '../lib/TimePickerComponent';
 
 export class TimePickerField extends React.Component{
   setTime(date){
-    this.refs.datePickerComponent.setTime(date);
+    this.refs.fieldComponent.setTime(date);
   }
   render(){
 /*
