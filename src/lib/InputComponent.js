@@ -176,7 +176,8 @@ export class InputComponent extends React.Component{
             keyboardType = {this.props.keyboardType}
             style={[
                 this.props.inputStyle,
-                {height: this.state.inputHeight}
+                 {height: ((this.props.style !== undefined) && (this.props.style.height !==  undefined) )
+                    ? this.props.style.height : this.state.inputHeight}
               ]}
 
             onChange={this.handleChange}
