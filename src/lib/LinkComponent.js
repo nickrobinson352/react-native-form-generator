@@ -3,6 +3,7 @@
 import React from 'react';
 let { View, StyleSheet, Text} = require('react-native');
 import {Field} from './Field';
+import PropTypes from 'prop-types';
 
 
 export class LinkComponent extends React.Component{
@@ -47,6 +48,6 @@ export class LinkComponent extends React.Component{
 }
 
 LinkComponent.propTypes = {
-  labelStyle: Text.propTypes.style,
-  containerStyle: View.propTypes.style
+  labelStyle: PropTypes.style,
+  containerStyle: PropTypes.style
 }
